@@ -138,6 +138,15 @@ cat /proc/cpuinfo      --> show cpu stats
 
 ```
 
+```
+apt update
+
+apt install iputils -ping --yes
+
+ping google.com -c 1
+
+```
+
 ### SSH
 
 ```
