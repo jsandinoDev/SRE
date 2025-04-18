@@ -164,3 +164,23 @@ vim .ssh/autorized-keys         --> copy in server
 
 
 ```
+
+### Sad Servers
+
+```
+lsof -f --> Show all files used in the server and the process in using each
+
+lsof -f | grep "file" -> filter file
+
+tail -f /var/log/file.log
+
+
+### IPs Example
+cut -f1 -d" " file | uniq -c
+-f1 -> show field 1
+-d -> delimiter
+uniq -c -> Show and count unique something
+
+cut -f1 -d" " file | sort | uniq -c
+
+```
