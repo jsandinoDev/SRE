@@ -628,7 +628,7 @@ Similar a un configmap pero "oculto" a a vista, no encryptado (esta en base 64)
 Sirve para manejar manifiestos
 
 ```bash
-kustomization build .
+kustomization build . | kubectl apply -f
 ```
 
 ```yaml
