@@ -20,8 +20,8 @@ Creating a pod with yaml
 ```YAML
 #pod-definition.yml
 apiVersion: v1
-kind: pod
-metada: 
+kind: Pod
+metadata: 
   name: myapp-pod
   labels: 
     app: myapp
@@ -38,4 +38,12 @@ kubectl create -f pod-definition.yml
 kubectl get pods
 
 kubectl describe pod myapp-pod
+
+# Search in which node it is
+kubectl describe pod myapp-pod | grep Node
+
+# Generate yml file
+kubectl run redis --image=redis --dry-run=client -o yaml > redis.yaml
 ```
+
+
