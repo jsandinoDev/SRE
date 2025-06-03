@@ -1,5 +1,7 @@
 # Certification TIPS
 
+
+
 Edit
 
 ```SHELL
@@ -20,6 +22,9 @@ kubectl run nginx --image=nginx
 kubectl run nginx --image=nginx --dry-run=client -o yaml
 
 kubectl run nginx --image=nginx --labels="tier=db"
+
+# Copy pod defintion in new file
+kubectl get pod pod1 -o yaml > sample.yaml
 
 
 # Create Deployment

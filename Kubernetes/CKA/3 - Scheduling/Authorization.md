@@ -32,3 +32,4 @@ kube-apiserver -h | grep enable-admission-plugins
 
 ## Validating and Mutations Addmission Controllers
 
+REVIEW THIS TOPIC
